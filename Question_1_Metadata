@@ -1,14 +1,12 @@
-Data derived from 2019 ACC Atlantic Division Football Standings
+Data derived from 2019 ACC Atlantic Division Football Standings and additional information
 
 | Column Header | Description |
 | ------------- | ----------- |
-| School | Name of College that the Football Team Represents |
+| Team | Name of College and Mascot of  the Football Team |
 | Mascot | Animal, Person, or Abstract Concept attached to the team or university |
 | City | City in which the Team is Located |
 | State | State in which to Team is Located |
-| ConfW | Number of regular season wins against conference opponents |
-| ConfL | Number of regular season losses to conference opponents |
-| OvlW | Number of total wins during the season |
-| OvlL | Number of total losses during the season |
+| Conference W-L | Number of regular season wins and losses against conference opponents |
+| Overall W-L | Number of total wins and losses during the season |
 | PF | Total points scored during the season |
 | PA | Total points allowed during the season |
