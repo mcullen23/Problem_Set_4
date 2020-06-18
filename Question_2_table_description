@@ -1,0 +1,16 @@
+#Number of columns will be expanded to make information easier to process.
+#For instance, 'Conference W-L' and 'Overall W-L' will each be split into separate columns for wins and losses.
+#Names of columns will be simplified to limit chance for typos when processing data on command line
+#Columns would be as follows
+
+Place - Integer, this will be the primary key
+School - String
+Mascot - String
+City - String
+State - String
+ConfW - Integer
+ConfL - Integer
+OvlW - Integer
+OvlL - Integer
+PF - Integer
+PA - Integer
