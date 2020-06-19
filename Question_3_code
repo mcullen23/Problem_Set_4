@@ -1,0 +1,34 @@
+CREATE TABLE 'ACCFootball' (
+Place integer NOT NULL DEFAULT '',
+School CHAR(20) NOT NULL DEFAULT '',
+Mascot CHAR(20) NOT NULL DEFAULT '',
+City CHAR(20) NOT NULL DEFAULT '',
+State CHAR(2) NOT NULL DEFAULT '',
+ConW integer NOT NULL DEFAULT '0',
+ConL integer NOT NULL DEFAULT '0',
+OvlW integer NOT NULL DEFAULT '0',
+OvlL integer NOT NULL DEFAULT '0',
+PF integer NOT NULL DEFAULT '0',
+PA integer NOT NULL DEFAULT '0',
+PRIMARY KEY ('Place')
+);
+
+.mode column
+
+.headers on
+
+INSERT INTO 'ACCFootball' VALUES (1,'Clemson','Tigers','Clemson','SC',8,0,14,1,659,203);
+
+INSERT INTO 'ACCFootball' VALUES (2,'Louisville','Cardinals','Louisville','KY',5,3,8,5,430,434);
+
+INSERT INTO 'ACCFootball' VALUES (3,'WakeForest','DemonDeacons','WinstonSalem','NC',4,4,8,5,414,378);
+
+INSERT INTO 'ACCFootball' VALUES (4,'FloridaState','Seminoles','Tallahassee','FL',4,4,6,7,363,362);
+
+INSERT INTO 'ACCFootball' VALUES (5,'BostonCollege','Eagles','ChestnutHill','MA',4,4,6,7,377,418);
+
+INSERT INTO 'ACCFootball' VALUES (6,'Syracuse','Orange','Syracuse','NY',2,6,5,7,339,368);
+
+INSERT INTO 'ACCFootball' VALUES (7,'NCState','Wolfpack','Raliegh','NC',1,7,4,8,265,361);
+
+SELECT Place, School, Mascot, City, State, ConW, ConL, OvlW, OvlL, PF, PA FROM ACCFootball;
