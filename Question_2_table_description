@@ -1,13 +1,24 @@
-#Number of columns will be expanded to make information easier to process.
-#For instance, 'Conference W-L' and 'Overall W-L' will each be split into separate columns for wins and losses.
-#Names of columns will be simplified to limit chance for typos when processing data on command line
-#Columns would be as follows
+2 Tables will be made, one to list general info on the teams, the other to list standings and stats from the 2019 football season.
 
-Place - Integer, this will be the primary key
-School - String
+Number of columns will be expanded to make information easier to process.
+
+For instance, 'Conference W-L' and 'Overall W-L' will each be split into separate columns for wins and losses.
+
+Names of columns will be simplified to limit chance for typos when processing data on command line
+
+Columns would be as follows
+
+Table 1
+
+School - String, primary key
 Mascot - String
 City - String
 State - String
+
+Table 2
+
+Place - Integer
+School - String, primary key
 ConfW - Integer
 ConfL - Integer
 OvlW - Integer
