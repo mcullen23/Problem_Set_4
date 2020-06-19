@@ -1,0 +1,57 @@
+#add date to tables, don't include annotations when entering into command line
+
+#decide this format before entry
+#for some reason it prints weird if you run these commands after entering the data
+
+
+###
+
+
+.mode column
+
+.headers on
+
+#enter data for AtlanticTeams
+#7 rows 4 columns
+#then display with select command
+
+INSERT INTO 'AtlanticTeams' VALUES ('Clemson','Tigers','Clemson','SC');
+
+INSERT INTO 'AtlanticTeams' VALUES ('Louisville','Cardinals','Louisville','KY');
+
+INSERT INTO 'AtlanticTeams' VALUES ('WakeForest','DemonDeacons','WinstonSalem','NC');
+
+INSERT INTO 'AtlanticTeams' VALUES ('FloridaState','Seminoles','Tallahassee','FL');
+
+INSERT INTO 'AtlanticTeams' VALUES ('BostonCollege','Eagles','ChestnutHill','MA');
+
+INSERT INTO 'AtlanticTeams' VALUES ('Syracuse','Orange','Syracuse','NY');
+
+INSERT INTO 'AtlanticTeams' VALUES ('NCState','Wolfpack','Raliegh','NC');
+
+SELECT School, Mascot, City, State FROM AtlanticTeams;
+
+
+#do it again for table 2
+
+#enter data for AtlanticStandings
+#7 rows 8 columns
+#then display with select command
+
+INSERT INTO 'AtlanticStandings' VALUES (1,'Clemson',8,0,14,1,659,203);
+
+INSERT INTO 'AtlanticStandings' VALUES (2,'Louisville',5,3,8,5,430,434);
+
+INSERT INTO 'AtlanticStandings' VALUES (3,'WakeForest',4,4,8,5,414,378);
+
+INSERT INTO 'AtlanticStandings' VALUES (4,'FloridaState',4,4,6,7,363,362);
+
+INSERT INTO 'AtlanticStandings' VALUES (5,'BostonCollege',4,4,6,7,377,418);
+
+INSERT INTO 'AtlanticStandings' VALUES (6,'Syracuse',2,6,5,7,339,368);
+
+INSERT INTO 'AtlanticStandings' VALUES (7,'NCState',1,7,4,8,265,361);
+
+SELECT Place, School, ConW, ConL, OvlW, OvlL, PF, PA FROM AtlanticStandings;
+
+
