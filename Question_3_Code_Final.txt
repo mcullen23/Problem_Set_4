@@ -1,0 +1,33 @@
+#make database to store tables, don't include annotations when entering into command line
+
+module load sqlite
+
+sqlite3 ACCAtlantic.db
+
+#make first table that includes general info about each team
+#designate school variable as primary key
+#4 columns
+
+CREATE TABLE 'AtlanticTeams' (
+School CHAR(20) NOT NULL DEFAULT '',
+Mascot CHAR(20) NOT NULL DEFAULT '',
+City CHAR(20) NOT NULL DEFAULT '',
+State CHAR(2) NOT NULL DEFAULT '',
+PRIMARY KEY ('School')
+);
+
+#make second table that includes standings and stats from the 2019 football season
+#8 columns
+
+CREATE TABLE 'AtlanticStandings' (
+Place integer NOT NULL DEFAULT '',
+School CHAR(20) NOT NULL DEFAULT '',
+ConW integer NOT NULL DEFAULT '0',
+ConL integer NOT NULL DEFAULT '0',
+OvlW integer NOT NULL DEFAULT '0',
+OvlL integer NOT NULL DEFAULT '0',
+PF integer NOT NULL DEFAULT '0',
+PA integer NOT NULL DEFAULT '0',
+PRIMARY KEY ('School')
+);
+
