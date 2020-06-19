@@ -1,0 +1,15 @@
+#metadata
+
+#Data derived from 2019 ACC Atlantic Division Football Standings and additional information compiled by ESPN
+
+#found at https://www.espn.com/college-football/standings/_/group/1
+
+| Column Header | Description |
+|:-------------:|:----------- |
+| Team | Name of College and Mascot of  the Football Team |
+| City | City in which the Team is Located |
+| State | State in which to Team is Located |
+| Conference W-L | Number of regular season wins and losses against conference opponents |
+| Overall W-L | Number of total wins and losses during the season |
+| PF | Total points scored during the season |
+| PA | Total points allowed during the season |
