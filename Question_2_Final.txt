@@ -1,0 +1,27 @@
+2 Tables will be made, one to list general info on the teams, the other to list standings and stats from the 2019 football season.
+
+Number of columns will be expanded to make information easier to process.
+
+For instance, 'Conference W-L' and 'Overall W-L' will each be split into separate columns for wins and losses.
+
+Names of columns will be simplified to limit chance for typos when processing data on command line
+
+Columns would be as follows
+
+Table 1
+
+School - University the Team Represents - String, primary key
+Mascot - Animal, Person, or Abstract Concept the Team has named themselves - String
+City - Host City of the Institution - String
+State - State the City is Located in - String
+
+Table 2
+
+Place - Placement in the Atlantic Division of the ACC based on Conference Record - Integer
+School - University the Team Represents - String, primary key
+ConfW - Total wins against ACC opponents during regular season - Integer
+ConfL - Total losses to ACC opponents during regular season - Integer
+OvlW - Total wins for the 2019 football season, including postseason - Integer
+OvlL - Total losses for the 2019 football season, including postseason - Integer
+PF - Total points scored during the 2019 football season, including postseason - Integer
+PA - Total points allowed during the 2019 football season, including postseason - Integer
